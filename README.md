@@ -9,9 +9,6 @@
     - Nguyễn Thành Đạt
     - Đào Quốc Anh
     - Nguyễn Mạnh Quân 
-Chúng tôi sử dụng **PHP** làm ngôn ngữ chính để phát triển **website tiệm bánh Sucré Bakery**.  
-Đây là một dự án web bán bánh ngọt được xây dựng để thực hành lập trình web với PHP, MySQL, HTML, CSS và JavaScript.
-
 ---
 
 # ⚙️ Cách cài đặt
