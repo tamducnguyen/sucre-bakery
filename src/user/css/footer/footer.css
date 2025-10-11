@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brown-color);
+  gap: 50px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.link {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  color: bisque;
+  font-weight: bold;
+  text-decoration: none;
+}

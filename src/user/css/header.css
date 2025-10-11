@@ -1,0 +1,96 @@
+header {
+  position: fixed;
+  background-color: var(--brown-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.header-logo {
+    font-family: "Roboto";
+    font-size: 30px;
+    line-height: 36px;
+    color: bisque;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-navigation {
+    display: flex;
+}
+
+.header-option {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 28px;
+    color: bisque;
+    font-weight: bold;
+
+    border-radius: 9999px;
+    padding: 5px 15px;
+    transition: 0.6s;
+
+    text-decoration: none;
+}
+
+.header-option:hover {
+    background-color: bisque;
+    color: var(--brown-color);
+}
+
+.header-cart {
+    display: flex;
+    gap: 5px;
+
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 28px;
+    color: bisque;
+    font-weight: bold;
+
+    border-radius: 9999px;
+    padding: 5px 15px;
+    transition: 0.6s;
+
+    text-decoration: none;
+}
+
+.header-cart:hover {
+    background-color: bisque;
+    color: var(--brown-color);
+}
+
+.header-cart-total {
+    background-color: red;
+    border-radius: 9999px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header-name {
+    max-width: 250px;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 28px;
+    color: bisque;
+    font-weight: bold;
+
+    border-radius: 9999px;
+    padding: 5px 15px;
+    transition: 0.6s;
+
+    text-decoration: none;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.header-name:hover {
+    background-color: bisque;
+    color: var(--brown-color);
+}
