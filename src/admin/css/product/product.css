@@ -1,0 +1,124 @@
+.content .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.content .list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+.content .page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: auto;
+}
+.list-item .item {
+  background-color: var(--cream-color);
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 18px;
+  padding: 12px;
+  width: 100%;
+}
+.item .item-image {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 15%;
+}
+.item .item-detail {
+  width: 85%;
+}
+.item-image .product-image {
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.item-image .item-action {
+  display: flex;
+  justify-content: space-evenly;
+}
+.item-action .edit-button {
+  background-color: lime;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 2px 6px;
+}
+.item-action .edit-button:hover {
+  background-color: limegreen;
+}
+.item-action .remove-button {
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 2px 6px;
+}
+.item-action .remove-button:hover {
+  background-color: firebrick;
+}
+.item-detail .product-name {
+  color: black;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-detail .product-price {
+  color: var(--grey-color);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.item-detail .product-type {
+  color: var(--grey-color);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.item-detail .product-description {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--grey-color);
+  display: -webkit-box;
+  font-family: "Roboto";
+  font-size: 16px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: justify;
+  text-overflow: ellipsis;
+}
+.page .text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+.page .input {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}

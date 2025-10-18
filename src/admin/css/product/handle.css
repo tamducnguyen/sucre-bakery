@@ -1,0 +1,104 @@
+.content .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.content .container {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  gap: 16px;
+}
+.container .form-container {
+  width: 50%;
+}
+.container .image-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container .product-image {
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.form-container .form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form .label {
+  background-color: var(--cream-color);
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 8px;
+}
+.form .input {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.form .group {
+  margin-bottom: 16px;
+}
+.form .submit-button {
+  color: var(--cream-color);
+  background-color: var(--brown-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 8px;
+}
+.group .price {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.price .note {
+  color: var(--grey-color);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.image-container .upload {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  width: 50%;
+  text-align-last: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  background-color: var(--cream-color);
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.image-container .upload::file-selector-button {
+  display: none;
+}

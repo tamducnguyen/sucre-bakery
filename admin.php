@@ -35,10 +35,16 @@ session_start();
             require "./src/admin/page/login.php";
             break;
 
+        case "logout":
+            authorize_admin();
+            $api->logout_admin();
+            set_toast_message("Đăng xuất thành công!");
+            redirect("?direct=login");
+
         // Else
         default:
             authorize_admin();
-            require "./src/admin/page/home.php";
+            require "./src/admin/page/panel.php";
             break;
     }
     ?>
