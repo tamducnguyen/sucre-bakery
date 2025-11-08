@@ -1,0 +1,138 @@
+.layout-container {
+  width: 60%;
+  min-height: 100vh;
+  padding-top: calc(80px + 86px); /* Header: 86px */
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-label {
+  width: fit-content;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: bisque;
+  background-color: var(--brown-color);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.search-input {
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+  background-color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+}
+
+.search-submit {
+  width: fit-content;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: bisque;
+  background-color: var(--brown-color);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.search-result {
+  width: 100%;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+}
+
+.product-name {
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 12px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-price {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  color: black;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.product-button {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  color: bisque;
+  background-color: var(--brown-color);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 9999px;
+}
+
+.no-product {
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--brown-color);
+  background-color: bisque;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.search-suggest {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
