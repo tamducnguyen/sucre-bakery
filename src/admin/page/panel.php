@@ -176,6 +176,31 @@ $ad_info = $api->get_admin_info();
                 require "./src/admin/page/home.php";
                 break;
 
+            // Statistic
+            case "all":
+                require "./src/admin/page/statistic/all.php";
+                break;
+
+            case "wait":
+                require "./src/admin/page/statistic/wait.php";
+                break;
+
+            case "work":
+                require "./src/admin/page/statistic/work.php";
+                break;
+
+            case "done":
+                require "./src/admin/page/statistic/done.php";
+                break;
+
+            case "cancel":
+                require "./src/admin/page/statistic/cancel.php";
+                break;
+
+            case "detail":
+                require "./src/admin/page/statistic/detail.php";
+                break;
+
             // Product
             case "product":
                 require "./src/admin/page/product/product.php";
