@@ -24,6 +24,16 @@ trait Product
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
+    function get_products_by_keyword($keyword)
+    {
+        $sql = "SELECT *
+                FROM `product`
+                WHERE `pd_name` LIKE '%$keyword%'
+                ORDER BY `pd_id` ASC;";
+
+        $result = $this->connection->query($sql);
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
 
     function get_product_by_id($pd_id)
     {
