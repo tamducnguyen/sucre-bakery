@@ -12,7 +12,7 @@ $link_text = $us_info ? $us_info["us_name"] : "Đăng nhập";
     <a class="header-logo" href="?direct=home">SUCRÉ BAKERY</a>
 
     <div class="header-navigation">
-        <a class="header-option" href="#">Tìm kiếm</a>
+        <a class="header-option" href="?direct=search">Tìm kiếm</a>
 
         <a class="header-option" href="?direct=product">Sản phẩm</a>
 
@@ -22,12 +22,18 @@ $link_text = $us_info ? $us_info["us_name"] : "Đăng nhập";
 
         <?php
         if ($us_info) { ?>
-            <a class="header-option" href="#">Lịch sử mua hàng</a>
+            <a class="header-option" href="?direct=history">Lịch sử mua hàng</a>
             
-            <a class="header-option" href="#">Đăng xuất</a>
+            <a class="header-option" href="?direct=logout">Đăng xuất</a>
 
-            <a class="header-cart" href="#">
+            <a class="header-cart" href="?direct=cart">
                 <p>Giỏ hàng</p>
+
+                <?php
+                $total_quantity = $api->get_cart_total_quantity($us_info["us_id"]);
+                if ($total_quantity > 0) { ?>
+                    <div class="header-cart-total"><?= $total_quantity ?></div>
+                <?php } ?>
             </a>
         <?php } ?>
     </div>

@@ -38,6 +38,12 @@ session_start();
             require "./src/user/page/account/login.php";
             break;
 
+        case "logout":
+            authorize_user();
+            $api->logout_user();
+            set_toast_message("Đăng xuất thành công!");
+            redirect("?direct=login");
+
         case "modify":
             authorize_user();
             require "./src/user/page/account/modify.php";
@@ -57,6 +63,30 @@ session_start();
             require "./src/user/page/product/product.php";
             break;
 
+        case "search":
+            require "./src/user/page/product/search.php";
+            break;
+
+        // Pay
+        case "cart":
+            authorize_user();
+            require "./src/user/page/pay/cart.php";
+            break;
+
+        case "history":
+            authorize_user();
+            require "./src/user/page/pay/history.php";
+            break;
+
+        case "particular":
+            authorize_user();
+            require "./src/user/page/pay/particular.php";
+            break;
+
+        case "payout":
+            authorize_user();
+            require "./src/user/page/pay/payout.php";
+            break;
 
         // Footer
         case "address":
