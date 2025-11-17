@@ -14,8 +14,8 @@ if (isset($_POST["action"])) {
 }
 
 $itemPerPage = 3;
-$allProducts = $api->get_products();
-$totalPages = get_total_pages($itemPerPage, $allProducts);
+$allProductsCount = $api->get_count_products();
+$totalPages = get_total_pages($itemPerPage, $allProductsCount);
 $currentPage = get_current_page($totalPages);
 $products = $api->get_products_by_page($currentPage, $itemPerPage);
 ?>

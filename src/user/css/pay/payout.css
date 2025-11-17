@@ -1,0 +1,125 @@
+.layout-container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  padding-top: calc(80px + 86px);
+  width: 60%;
+}
+.payout-container {
+  background-color: var(--cream-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  padding: 20px 40px;
+}
+.title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.horizontal-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+}
+.choice {
+  color: black;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 16px;
+  gap: 4px;
+  line-height: 24px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group p {
+  color: black;
+  font-family: "Roboto";
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.input-group input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th {
+  align-content: center;
+  background-color: var(--pink-color);
+  border: 1px solid black;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 8px;
+  text-align: center;
+}
+.table td {
+  align-content: center;
+  border: 1px solid black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+}
+.table .col-1 {
+  text-align: center;
+  width: 60%;
+}
+.table .col-2 {
+  text-align: center;
+  width: 20%;
+}
+.table .col-3 {
+  text-align: center;
+  width: 20%;
+}
+.total-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.total-title {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: right;
+}
+.total-text {
+  font-family: "Roboto";
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.btn {
+  background-color: var(--brown-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: 0.3s;
+  width: 100%;
+}
+.btn:hover {
+  background-color: bisque;
+  color: var(--brown-color);
+}

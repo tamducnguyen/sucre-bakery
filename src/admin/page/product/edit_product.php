@@ -12,8 +12,7 @@ $pdt_id = $product["pdt_id"];
 $pd_image = $product["pd_image"];
 
 if (isset($_POST["action"])) {
-    switch ($_POST["action"]) {
-        case "edit":
+    if ($_POST["action"]=='edit') {
             $new_name = $_POST["pd_name"];
             $new_price = $_POST["pd_price"];
             $new_description = $_POST["pd_description"];
@@ -25,7 +24,7 @@ if (isset($_POST["action"])) {
 
             if ($new_image_size > $max_size) {
                 toast("Dung lượng ảnh phải nhỏ hơn 100KB!");
-                break;
+                exit;
             }
 
             $new_product = [];
@@ -59,7 +58,6 @@ if (isset($_POST["action"])) {
                 toast($result["message"]);
             }
 
-            break;
     }
 }
 ?>

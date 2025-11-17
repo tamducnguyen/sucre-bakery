@@ -1,0 +1,40 @@
+.content .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.content .container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 24px;
+}
+.container .item {
+  aspect-ratio: 1/1;
+  background-color: var(--cream-color);
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 12px;
+  width: 100%;
+}
+.item .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+}
+.item .number {
+  color: black;
+  font-family: "Roboto";
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: auto;
+  margin-top: auto;
+  text-align: center;
+}

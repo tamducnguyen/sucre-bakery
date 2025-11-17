@@ -1,14 +1,13 @@
 <?php
 trait Product
 {
-    function get_products()
+    function get_count_products()
     {
-        $sql = "SELECT *
-                FROM `product`
-                ORDER BY `pd_id` ASC;";
+        $sql = "SELECT COUNT(*) as count
+                FROM `product`;";
 
         $result = $this->connection->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC);
+        return $result->fetch_assoc()["count"];
     }
 
     function get_products_by_page($page, $itemPerPage)

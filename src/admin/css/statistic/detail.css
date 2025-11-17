@@ -1,0 +1,91 @@
+.content .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.content .container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 24px;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container .product {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info .item {
+  display: flex;
+  gap: 8px;
+}
+.item .label {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.item .text {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+.product .product-part {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.product-part .label {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.product-part .detail {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-part .total {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+.product-part .status {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  width: 50%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.product-part .submit-button {
+  color: var(--cream-color);
+  background-color: var(--brown-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  padding: 4px 8px;
+}
+.product-part .checker {
+  color: var(--grey-color);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}

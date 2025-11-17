@@ -1,8 +1,7 @@
 <?php
-function get_total_pages($per, $array)
+function get_total_pages($per, $allOrdersCount)
 {
-    $total = count($array);
-    return ceil($total / $per);
+    return ceil($allOrdersCount / $per);
 }
 
 function get_current_page($totalPages)

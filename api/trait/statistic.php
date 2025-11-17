@@ -29,17 +29,6 @@ trait Statistic
      *                3 => done,
      *                4 => cancel
      */
-    function get_orders_by_status($status)
-    {
-        $sql = "SELECT *
-                FROM `order` as od
-                INNER JOIN `order_status` as os
-                ON od.`os_id` = os.`os_id`
-                WHERE od.`os_id` = '$status';";
-
-        $result = $this->connection->query($sql);
-        return $result->fetch_all(MYSQLI_ASSOC);
-    }
 
     /**
      * Get the orders with a specific status on a specific page.

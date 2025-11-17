@@ -3,8 +3,7 @@ require_css("./src/admin/css/product/handle.css");
 global $api;
 
 if (isset($_POST["action"])) {
-    switch ($_POST["action"]) {
-        case "add":
+    if ($_POST["action"]=='add') {
             $pd_name = $_POST["pd_name"];
             $pd_price = $_POST["pd_price"] * 1000;
             $pd_description = $_POST["pd_description"];
@@ -16,7 +15,7 @@ if (isset($_POST["action"])) {
 
             if ($image_size > $max_size) {
                 toast("Dung lượng ảnh phải nhỏ hơn 100KB!");
-                break;
+                exit;
             }
 
             $result = $api->add_product($pd_name, $pd_price, $pd_description, $pd_type, $pd_image);
@@ -27,8 +26,6 @@ if (isset($_POST["action"])) {
             } else {
                 toast($result["message"]);
             }
-
-            break;
     }
 }
 ?>

@@ -1,0 +1,55 @@
+.content .title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.content .table {
+  margin-top: 24px;
+}
+.content .page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: auto;
+}
+.table th {
+  background-color: var(--cream-color);
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 4px;
+}
+.table td {
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 28px;
+  padding: 4px;
+  text-align: center;
+}
+.table .detail-button {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 28px;
+}
+.page .text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+.page .input {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
